@@ -1,0 +1,12 @@
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\bin\Debug\net9.0\FeedbackSystem.Core.deps.json
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\bin\Debug\net9.0\FeedbackSystem.Core.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\bin\Debug\net9.0\FeedbackSystem.Core.pdb
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\FeedbackSystem.Core.csproj.AssemblyReference.cache
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\FeedbackSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\FeedbackSystem.Core.AssemblyInfoInputs.cache
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\FeedbackSystem.Core.AssemblyInfo.cs
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\FeedbackSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\FeedbackSystem.Core.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\refint\FeedbackSystem.Core.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\FeedbackSystem.Core.pdb
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Core\obj\Debug\net9.0\ref\FeedbackSystem.Core.dll

@@ -1,0 +1,67 @@
+2025-03-03 09:10:41.453 +04:00 [INF] Registered 5 endpoints in 628 milliseconds.
+2025-03-03 09:10:42.596 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-03-03 09:10:42.722 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL,
+    "PhoneNumber_CountryCode" TEXT NULL,
+    "PhoneNumber_Number" TEXT NULL,
+    "PhoneNumber_Extension" TEXT NULL
+);
+2025-03-03 09:10:42.974 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-03-03 09:10:43.232 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-03-03 09:10:43.260 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-03-03 09:10:43.358 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-03 09:10:43.359 +04:00 [INF] Hosting environment: Development
+2025-03-03 09:10:43.359 +04:00 [INF] Content root path: C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Web
+2025-03-03 09:10:43.411 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - null null
+2025-03-03 09:10:43.491 +04:00 [WRN] Failed to determine the https port for redirect.
+2025-03-03 09:10:43.532 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - 404 null null 122.1431ms
+2025-03-03 09:10:43.544 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:57678/, Response status code: 404
+2025-03-03 09:10:45.709 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - null null
+2025-03-03 09:10:45.711 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - 404 null null 1.8292ms
+2025-03-03 09:10:45.711 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:57678/, Response status code: 404
+2025-03-03 09:10:46.425 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - null null
+2025-03-03 09:10:46.426 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - 404 null null 1.2934ms
+2025-03-03 09:10:46.427 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:57678/, Response status code: 404
+2025-03-03 09:10:50.650 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - null null
+2025-03-03 09:10:50.652 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - 404 null null 1.4475ms
+2025-03-03 09:10:50.652 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:57678/, Response status code: 404
+2025-03-03 09:10:53.171 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - null null
+2025-03-03 09:10:53.171 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - 404 null null 0.6694ms
+2025-03-03 09:10:53.172 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:57678/, Response status code: 404
+2025-03-03 09:10:53.521 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/ - null null
+2025-03-03 09:10:53.521 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/ - 404 null null 0.5669ms
+2025-03-03 09:10:53.521 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:57678/, Response status code: 404
+2025-03-03 09:11:02.825 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - null null
+2025-03-03 09:11:02.962 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - 200 null text/html; charset=utf-8 136.1987ms
+2025-03-03 09:11:02.972 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui.css - null null
+2025-03-03 09:11:02.972 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.css - null null
+2025-03-03 09:11:02.975 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-03 09:11:02.975 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-bundle.js - null null
+2025-03-03 09:11:02.987 +04:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-03-03 09:11:02.987 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.css - 200 218 text/css 15.1524ms
+2025-03-03 09:11:02.988 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-03 09:11:02.990 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-03 09:11:02.993 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 17.8079ms
+2025-03-03 09:11:02.993 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui.css - 200 152073 text/css 21.1645ms
+2025-03-03 09:11:03.003 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-03 09:11:03.027 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 51.1045ms
+2025-03-03 09:11:03.780 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - null null
+2025-03-03 09:11:03.794 +04:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-03 09:11:03.824 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/favicon-32x32.png - null null
+2025-03-03 09:11:03.825 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-03 09:11:03.826 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/favicon-32x32.png - 200 628 image/png 1.6798ms
+2025-03-03 09:11:04.366 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 585.8591ms
+2025-03-03 09:29:47.517 +04:00 [INF] Application is shutting down...

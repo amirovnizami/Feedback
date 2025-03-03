@@ -1,0 +1,15 @@
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\bin\Debug\net9.0\FeedbackSystem.UseCases.deps.json
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\bin\Debug\net9.0\FeedbackSystem.UseCases.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\bin\Debug\net9.0\FeedbackSystem.UseCases.pdb
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\bin\Debug\net9.0\FeedbackSystem.Core.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\bin\Debug\net9.0\FeedbackSystem.Core.pdb
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.csproj.AssemblyReference.cache
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.AssemblyInfoInputs.cache
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.AssemblyInfo.cs
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\Feedback.1D5A2982.Up2Date
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\refint\FeedbackSystem.UseCases.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.pdb
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\ref\FeedbackSystem.UseCases.dll
