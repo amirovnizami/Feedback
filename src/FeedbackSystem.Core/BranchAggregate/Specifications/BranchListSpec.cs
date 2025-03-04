@@ -1,6 +1,6 @@
-﻿using FeedbackSystem.Core.CategoryAggregate;
+﻿using FeedbackSystem.Core.BranchAggregaet.Specifications;
 
-namespace FeedbackSystem.Core.BranchAggregaet.Specifications;
+namespace FeedbackSystem.Core.BranchAggregate.Specifications;
 
 public sealed class BranchListSpec : Specification<Branch>
 {

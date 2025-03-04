@@ -1,4 +1,4 @@
-﻿namespace FeedbackSystem.Web.Comments.List;
+﻿namespace FeedbackSystem.Web.Employee.Comments.List;
 
 public class CommentListRequest
 {

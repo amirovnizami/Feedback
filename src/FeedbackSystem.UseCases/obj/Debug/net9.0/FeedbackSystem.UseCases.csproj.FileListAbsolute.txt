@@ -13,3 +13,4 @@ C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\Feedb
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\refint\FeedbackSystem.UseCases.dll
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.pdb
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\ref\FeedbackSystem.UseCases.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.UseCases\obj\Debug\net9.0\FeedbackSystem.UseCases.sourcelink.json

@@ -1,7 +1,6 @@
 ﻿using FeedbackSystem.Core.CommentAggregate;
 using FeedbackSystem.Core.Interfaces;
 using FeedbackSystem.UseCases.Feedbacks.Create;
-using FeedbackSystem.Web.Feedbacks.Create;
 
 namespace FeedbackSystem.Web.Employee.Feedbacks.Create;
 

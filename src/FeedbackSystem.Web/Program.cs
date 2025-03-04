@@ -3,9 +3,9 @@ using AutoWrapper;
 using FeedbackSystem.Core.Interfaces;
 using FeedbackSystem.Core.Services;
 using FeedbackSystem.Core.Services.Helper;
+using FeedbackSystem.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
-using FeedbackSystem.Infrastructure.Extensions;
 using FeedbackSystem.Web.Configurations;
 
 using Microsoft.AspNetCore.Http.Features;
@@ -41,14 +41,6 @@ var appLogger = new SerilogLoggerFactory(logger)
 builder.Services.AddTransient<IManageFileService, ManageFileService>();
 builder.Services.AddOptionConfigs(builder.Configuration, appLogger, builder);
 builder.Services.AddServiceConfigs(appLogger, builder);
-// builder.Services.AddSwaggerGen(c =>
-// {
-//   // c.EnableAnnotations(); 
-//
-//   c.SwaggerDoc("v1", new OpenApiInfo { Title = "Feedback System API", Version = "v1" });
-//
-//   c.OperationFilter<SwaggerFileUploadOperation>(); 
-// });
 builder.Services.AddFastEndpoints()
   .SwaggerDocument(o =>
   {

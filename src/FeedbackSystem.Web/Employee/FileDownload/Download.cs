@@ -11,7 +11,6 @@ namespace FeedbackSystem.Web.Employee.FileDownload
       Get(DownloadRequest.Route);
       AllowAnonymous();
     }
-
     [AutoWrapIgnore(ShouldLogRequestData =false)]
     public override async Task HandleAsync(DownloadRequest request, CancellationToken ct)
     {
@@ -26,7 +25,6 @@ namespace FeedbackSystem.Web.Employee.FileDownload
         contentType: contentType,
         cancellation: ct
       );
-
     }
   }
 }

@@ -1,6 +1,4 @@
-﻿using FeedbackSystem.Core.CommentAggregate;
-
-namespace FeedbackSystem.Web.Feedbacks.Create;
+﻿namespace FeedbackSystem.Web.Employee.Feedbacks.Create;
 
 public class CreateFeedbackResponse(string loginId)
 {

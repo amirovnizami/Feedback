@@ -16,7 +16,7 @@ public class CreateFeedbackHandler(IRepository<Feedback> repository) :
   public async Task<Result<int>> Handle(CreateFeedbackCommand request, CancellationToken cancellationToken)
   {
     var newFeedback = new Feedback(request.LoginId, request.FirstName, request.LastName, request.Email,
-      request.BranchId, new Comment(request.Comment, 0, 1,request.FileName));
+      request.BranchId, new Comment(request.Comment, 0, false,request.FileName));
     var createdItem = await repository.AddAsync(newFeedback, cancellationToken);
     return Result.Success(createdItem.Id);
   }

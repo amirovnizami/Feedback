@@ -3,9 +3,9 @@
 public class CommentDto
 {
   public int Id { get; set; }
-  public string Text { get; set; } = null!;
-  public string Username { get; set; } = null!;
-  public string Email { get; set; } = null!;
+  public string Text { get; set; }
+  public string Username { get; set; }
+  public string Email { get; set; }
 
   public CommentDto(int id, string text, string username, string email)
   {
@@ -14,7 +14,4 @@ public class CommentDto
     Username = username;
     Email = email;
   }
-  public CommentDto() {}
-
-
 }

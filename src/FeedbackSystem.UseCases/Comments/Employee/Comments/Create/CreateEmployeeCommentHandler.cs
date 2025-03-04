@@ -15,7 +15,7 @@ public class CreateEmployeeCommentHandler(
     var result = await feedbackRepository.FirstOrDefaultAsync(feedbackSpecification, cancellationToken);
     if (result == null) return Result.NotFound("Feedback not found");
 
-    var newComment = new Comment(request.comment, result.Id, 1,request.file!);
+    var newComment = new Comment(request.comment, result.Id, false,request.file!);
     var createdItem = await repository.AddAsync(newComment, cancellationToken);
     return Result.Success(createdItem.Id);
   }

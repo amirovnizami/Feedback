@@ -1,9 +1,9 @@
 ﻿using FeedbackSystem.UseCases.Comments;
 using FeedbackSystem.UseCases.Comments.Employee.Comments.List;
-using FeedbackSystem.Web.Comments.List;
-using FeedbackSystem.Web.Employee.Comments.List;
 
-public class ListComment(IMediator _mediator) : Endpoint<CommentListRequest, CommentsListResponse>
+namespace FeedbackSystem.Web.Employee.Comments.List;
+
+public class ListComment(IMediator mediator) : Endpoint<CommentListRequest, CommentsListResponse>
 {
   public override void Configure()
   {
@@ -14,7 +14,7 @@ public class ListComment(IMediator _mediator) : Endpoint<CommentListRequest, Com
   public override async Task HandleAsync(CommentListRequest request, CancellationToken cancellationToken)
   {
     Result<List<CommentDto>> result =
-      await _mediator.Send(new ListEmployeeCommentQuery(request.loginId, null, null), cancellationToken);
+      await mediator.Send(new ListEmployeeCommentQuery(request.loginId, null, null), cancellationToken);
 
     if (result.IsSuccess)
     {

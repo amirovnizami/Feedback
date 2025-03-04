@@ -7,6 +7,7 @@ using FeedbackSystem.Infrastructure.User;
 using FeedbackSystem.UseCases.Branches.List;
 using FeedbackSystem.UseCases.Categories.List;
 using FeedbackSystem.UseCases.Comments.Admin.Comments.List;
+using FeedbackSystem.UseCases.Feedbacks.Get;
 using FeedbackSystem.UseCases.Feedbacks.List;
 using FeedbackSystem.UseCases.Security;
 using FeedbackSystem.UseCases.Statuses.List;
@@ -37,7 +38,8 @@ public static class InfrastructureServiceExtensions
       .AddScoped<IDeleteCategoryService, DeleteCategoryService>()
       .AddScoped<IIdGeneratorService, IdGeneratorService>()
       .AddSingleton<ITokenService, TokenService>()
-      .AddScoped<IUserContext, HttpUserContext>();
+      .AddScoped<IUserContext, HttpUserContext>()
+      .AddScoped<CommentService, CommentService>();
 
     // .AddScoped<IUserContext, HttpUserContext>();
 

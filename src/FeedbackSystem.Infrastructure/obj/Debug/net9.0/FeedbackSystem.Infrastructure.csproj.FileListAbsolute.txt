@@ -17,3 +17,4 @@ C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\Feedb
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Infrastructure\obj\Debug\net9.0\FeedbackSystem.Infrastructure.pdb
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Infrastructure\obj\Debug\net9.0\FeedbackSystem.Infrastructure.genruntimeconfig.cache
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Infrastructure\obj\Debug\net9.0\ref\FeedbackSystem.Infrastructure.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Infrastructure\obj\Debug\net9.0\FeedbackSystem.Infrastructure.sourcelink.json

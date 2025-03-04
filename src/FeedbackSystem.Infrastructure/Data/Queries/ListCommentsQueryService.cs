@@ -1,5 +1,5 @@
 ﻿using FeedbackSystem.Core.CommentAggregate;
-using FeedbackSystem.Core.CommentAggregate.Specifications;
+using FeedbackSystem.Core.CommentAggregate.Specification;
 using FeedbackSystem.UseCases.Comments.Admin.Comments.List;
 
 namespace FeedbackSystem.Infrastructure.Data.Queries;

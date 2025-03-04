@@ -6779,6 +6779,7 @@
           "FluentAssertions": "6.12.2",
           "MailKit": "4.8.0",
           "MediatR": "12.4.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.2",
           "Microsoft.AspNetCore.Http": "2.3.0",
           "Microsoft.AspNetCore.Mvc.Testing": "9.0.0",
           "Microsoft.AspNetCore.StaticFiles": "2.3.0",

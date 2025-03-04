@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
 
-namespace FeedbackSystem.Infrastructure.Extensions
+namespace FeedbackSystem.Infrastructure
 {
   public static class AuthenticationServiceExtensions
   {

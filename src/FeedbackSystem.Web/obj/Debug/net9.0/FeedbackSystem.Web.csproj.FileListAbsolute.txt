@@ -538,3 +538,4 @@ C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\Feedb
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Web\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Web\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Web\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\amiro\OneDrive - Baku State University\Desktop\FeedbackSystem\src\FeedbackSystem.Web\obj\Debug\net9.0\FeedbackSystem.Web.sourcelink.json

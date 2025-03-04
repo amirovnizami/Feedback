@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using FeedbackSystem.Core.BranchAggregaet.Specifications;
+using FeedbackSystem.Core.BranchAggregate.Specifications;
 using FeedbackSystem.UseCases.Branches.List;
 
 namespace FeedbackSystem.Infrastructure.Data.Queries

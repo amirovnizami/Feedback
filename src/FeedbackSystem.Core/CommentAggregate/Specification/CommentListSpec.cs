@@ -1,11 +1,11 @@
-﻿namespace FeedbackSystem.Core.CommentAggregate.Specifications
+﻿namespace FeedbackSystem.Core.CommentAggregate.Specification
 {
-  public class CommentListSpec : Specification<Comment>
+  public sealed class CommentListSpec : Specification<Comment>
   {
-    public CommentListSpec(int feedbackId, int? userId)
+    public CommentListSpec(int feedbackId,bool isAdmin)
     {
       Query.Where(comment => comment.FeedbackId == feedbackId &&
-                             (userId == null || comment.UserId == userId));
+                             (isAdmin == comment.IsAdmin));
     }
   }
 }

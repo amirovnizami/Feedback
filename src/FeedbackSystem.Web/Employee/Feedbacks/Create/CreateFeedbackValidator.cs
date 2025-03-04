@@ -1,5 +1,4 @@
-﻿using FeedbackSystem.Web.Feedbacks.Create;
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace FeedbackSystem.Web.Employee.Feedbacks.Create;
 

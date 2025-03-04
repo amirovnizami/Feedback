@@ -18,7 +18,12 @@ public class Create(IMediator mediator,IManageFileService manageFileService) : E
 
   public override async Task HandleAsync(CreateCommentRequest request, CancellationToken ct)
   {
-    var fileName = await manageFileService.UploadFile(request.UploadFile!);
+    string? fileName = null;
+    if (request.UploadFile != null)
+    {
+      fileName = await manageFileService.UploadFile(request.UploadFile);
+      
+    }
 
     var result = await mediator.Send(new CreateAdminCommentCommand(request.feedbackId, request.Comment,fileName), ct);
     if (result.IsSuccess)
