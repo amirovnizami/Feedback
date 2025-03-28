@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ARDdZDvus+9TBmB6Z6ff7y4j421jhBEqtZlQIYcwcd8=",
+  "Hash": "ACjgkiOq8wa9ALjtPvMaJGRkFN4qfrovkG9P+yfit+M=",
   "Source": "FeedbackSystem.Web",
   "BasePath": "_content/FeedbackSystem.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FeedbackSystem.Web\\wwwroot",
       "Source": "FeedbackSystem.Web",
-      "ContentRoot": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Web\\wwwroot\\",
       "BasePath": "_content/FeedbackSystem.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Web\\wwwroot\\.gitkeep",
+      "Identity": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Web\\wwwroot\\.gitkeep",
       "SourceId": "FeedbackSystem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Web\\wwwroot\\",
       "BasePath": "_content/FeedbackSystem.Web",
       "RelativePath": "#[.{fingerprint}]?.gitkeep",
       "AssetKind": "All",
@@ -41,7 +41,7 @@
   "Endpoints": [
     {
       "Route": ".5ipweew5fc.gitkeep",
-      "AssetFile": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Web\\wwwroot\\.gitkeep",
+      "AssetFile": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Web\\wwwroot\\.gitkeep",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 05:09:13 GMT"
+          "Value": "Fri, 28 Mar 2025 06:57:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -86,7 +86,7 @@
     },
     {
       "Route": ".gitkeep",
-      "AssetFile": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Web\\wwwroot\\.gitkeep",
+      "AssetFile": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Web\\wwwroot\\.gitkeep",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -107,7 +107,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 05:09:13 GMT"
+          "Value": "Fri, 28 Mar 2025 06:57:53 GMT"
         },
         {
           "Name": "Cache-Control",

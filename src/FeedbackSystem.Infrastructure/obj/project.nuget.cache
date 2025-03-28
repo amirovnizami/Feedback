@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0LeJwqeskTk=",
+  "dgSpecHash": "jExaW55qLKk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amiro\\.nuget\\packages\\ardalis.guardclauses\\5.0.0\\ardalis.guardclauses.5.0.0.nupkg.sha512",
     "C:\\Users\\amiro\\.nuget\\packages\\ardalis.result\\10.1.0\\ardalis.result.10.1.0.nupkg.sha512",

@@ -21,7 +21,7 @@ public class GetFeedbackHandler(
 
     foreach (var comment in entity.Comments)
     {
-      var dto = await commentService.CreateCommentDtoAsync(comment,request.id);
+      var dto = await commentService.CreateCommentDtoAsync(comment);
       commentDtos.Add(dto);
     }
 

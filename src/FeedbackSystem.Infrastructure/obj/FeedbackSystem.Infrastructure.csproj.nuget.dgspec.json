@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj": {}
+    "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj": {
+    "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj",
+        "projectUniqueName": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj",
         "projectName": "FeedbackSystem.Core",
-        "projectPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj",
+        "projectPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj",
         "packagesPath": "C:\\Users\\amiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\obj\\",
+        "outputPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\NuGet.Config",
+          "C:\\Users\\amiro\\Feedback\\NuGet.Config",
           "C:\\Users\\amiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -197,21 +197,21 @@
         }
       }
     },
-    "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj": {
+    "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj",
         "projectName": "FeedbackSystem.Infrastructure",
-        "projectPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Infrastructure\\FeedbackSystem.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\amiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\NuGet.Config",
+          "C:\\Users\\amiro\\Feedback\\NuGet.Config",
           "C:\\Users\\amiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -227,11 +227,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj": {
-                "projectPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj"
+              "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj": {
+                "projectPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj"
               },
-              "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj": {
-                "projectPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj"
+              "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj": {
+                "projectPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj"
               }
             }
           }
@@ -388,21 +388,21 @@
         }
       }
     },
-    "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj": {
+    "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj",
+        "projectUniqueName": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj",
         "projectName": "FeedbackSystem.UseCases",
-        "projectPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj",
+        "projectPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.UseCases\\FeedbackSystem.UseCases.csproj",
         "packagesPath": "C:\\Users\\amiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.UseCases\\obj\\",
+        "outputPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.UseCases\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\NuGet.Config",
+          "C:\\Users\\amiro\\Feedback\\NuGet.Config",
           "C:\\Users\\amiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -418,8 +418,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj": {
-                "projectPath": "C:\\Users\\amiro\\OneDrive - Baku State University\\Desktop\\FeedbackSystem\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj"
+              "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj": {
+                "projectPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj"
               }
             }
           }
