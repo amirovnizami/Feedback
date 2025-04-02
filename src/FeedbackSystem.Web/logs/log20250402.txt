@@ -1,0 +1,4 @@
+2025-04-02 07:19:57.460 +04:00 [INF] Starting web host
+2025-04-02 07:19:58.215 +04:00 [INF] Options were configured
+2025-04-02 07:19:58.674 +04:00 [INF] Infrastructure services registered
+2025-04-02 07:19:59.093 +04:00 [INF] Mediatr and Email Sender services registered
