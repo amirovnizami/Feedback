@@ -29,11 +29,16 @@ public class Create(IMediator mediator, IIdGeneratorService generateService,IMan
   {
 
     var loginId = generateService.CustomGenerateId();
-    var fileName = await manageFileService.UploadFile(request.UploadFile!);
+    string? fileName = null;
+    if (request.UploadFile != null)
+    {
+      fileName = await manageFileService.UploadFile(request.UploadFile);
+      
+    }
 
     var result =
       await mediator.Send(
-        new CreateFeedbackCommand(loginId, request.FirstName!, request.LastName!, request.Email!, request.BranchId,
+        new CreateFeedbackCommand(loginId, request.FirstName, request.LastName, request.Email, request.BranchId,
           request.Comment,fileName), ct);
 
     if (result.IsSuccess)

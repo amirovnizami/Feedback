@@ -20,8 +20,17 @@ public class ListComment(IMediator mediator) : Endpoint<CommentListRequest, Comm
     {
       Response = new CommentsListResponse
       {
-        Comments = result.Value.Select(b => new CommentRecord(b.Id, b.Text)).ToList()
+        Comments = result.Value.Select(b => new CommentRecord(b.Id, b.Text)).ToList(),
+        ErrorMessage = null
       };
+    }
+    else
+    {
+      Response = new CommentsListResponse
+      {
+        ErrorMessage = "Login failed."
+      };
+      HttpContext.Response.StatusCode = 400; 
     }
   }
 }

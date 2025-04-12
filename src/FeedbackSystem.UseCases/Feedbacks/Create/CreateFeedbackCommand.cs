@@ -10,11 +10,11 @@ namespace FeedbackSystem.UseCases.Feedbacks.Create;
 
 public record CreateFeedbackCommand(
   string LoginId,
-  string FirstName,
-  string LastName,
-  string Email,
+  string? FirstName,
+  string? LastName,
+  string? Email,
   int BranchId,
   string Comment,
-  string FileName) : ICommand<Result<int>>
+  string? FileName) : ICommand<Result<int>>
 {
 }

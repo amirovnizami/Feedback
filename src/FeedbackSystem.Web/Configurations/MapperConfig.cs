@@ -24,7 +24,7 @@ public class MapperConfig
       cfg.CreateMap<Category, CategoryDto>()
         .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Name))
         .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name));
-
+      
       cfg.CreateMap<Status, StatusDto>()
         .ForMember(dest => dest.id, opt => opt.MapFrom(src => src.Id))
         .ForMember(dest => dest.StatusName, opt => opt.MapFrom(src => src.StatusName));
@@ -36,6 +36,7 @@ public class MapperConfig
       cfg.CreateMap<Comment, CommentDto>()
         .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
         .ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.Text));
+
     });
   }
 }

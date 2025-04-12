@@ -7,6 +7,7 @@ public class CommentByLoginId:Specification<Comment>
   public CommentByLoginId(string id)
   {
     Query.Include(c => c.Feedback);
-    Query.Where(c => c.Feedback.LoginId == id && c.IsAdmin == false);
+    Query.Where(c => c.Feedback != null && c.Feedback.LoginId == id && c.IsAdmin == false);
+
   }
 }

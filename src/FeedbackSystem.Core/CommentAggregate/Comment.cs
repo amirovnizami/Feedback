@@ -25,9 +25,7 @@ public class Comment : EntityBase, IAggregateRoot
   public DateTime CreDateTime { get; set; } = DateTime.Now;
 
   [ForeignKey("FeedbackId")] public int FeedbackId { get; set; }
-  // public int? UserId { get; set; }
   public bool IsAdmin { get; set; }
   public string? FileName { get; set; }
   [JsonIgnore] public Feedback Feedback { get; set; } = null!;
-  // public User? User { get; set; }
 }

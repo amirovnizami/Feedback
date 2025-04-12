@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FeedbackSystem.Core.CommentAggregate;
 using FeedbackSystem.Core.CommentAggregate.Specification;
 using FeedbackSystem.UseCases.Comments.Admin.Comments.List;
 
@@ -11,11 +12,10 @@ public class ListEmployeeCommentHandler(IListCommentQueryService _query, IMapper
   {
     var specification = new CommentByLoginId(request.loginId);
     var result = await _query.ListAsync(specification);
-    if (result.Count == 0)
+    if (result == null || result.Count == 0)
     {
-      return Result.NotFound("Comments not found");
+      return Result.Error("Login failed.");
     }
-
     return Result.Success(mapper.Map<List<CommentDto>>(result));
   }
 }
