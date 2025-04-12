@@ -24,15 +24,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -41,17 +41,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Ardalis.GuardClauses": {
               "target": "Package",
@@ -100,7 +94,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.2, )",
+              "version": "[8.0.0, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.AspNetCore.Http": {
@@ -152,7 +146,7 @@
             "FluentAssertions": "6.12.2",
             "MailKit": "4.8.0",
             "MediatR": "12.4.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.2",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
             "Microsoft.AspNetCore.Http": "2.3.0",
             "Microsoft.AspNetCore.Mvc.Testing": "9.0.0",
             "Microsoft.AspNetCore.StaticFiles": "2.3.0",
@@ -193,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -217,15 +211,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "c:\\LocalNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj": {
                 "projectPath": "C:\\Users\\amiro\\Feedback\\src\\FeedbackSystem.Core\\FeedbackSystem.Core.csproj"
@@ -238,17 +232,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Ardalis.Result": {
               "target": "Package",
@@ -289,7 +277,6 @@
             "FluentAssertions": "6.12.2",
             "MailKit": "4.8.0",
             "MediatR": "12.4.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.2",
             "Microsoft.AspNetCore.Http": "2.3.0",
             "Microsoft.AspNetCore.Mvc.Testing": "9.0.0",
             "Microsoft.AspNetCore.StaticFiles": "2.3.0",
@@ -330,7 +317,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

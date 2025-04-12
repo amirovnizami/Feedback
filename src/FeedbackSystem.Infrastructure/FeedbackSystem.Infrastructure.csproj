@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.1.3" />
-
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>  <!-- Bu hissəni əlavə edin -->
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Ardalis.SharedKernel" />
     <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" />
