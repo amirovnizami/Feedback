@@ -7,7 +7,6 @@ using FeedbackSystem.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using FeedbackSystem.Web.Configurations;
-
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
@@ -53,21 +52,34 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 );
 builder.Services.Configure<FormOptions>(options =>
 {
-  options.MultipartBodyLengthLimit = 10 * 1024 * 1024; 
+  options.MultipartBodyLengthLimit = 10 * 1024 * 1024;
 });
 builder.Services.AddFastEndpoints();
-builder.Services.AddSwaggerGen(c =>
+builder.Services.AddSignalR();
+builder.Services.AddCors(options =>
 {
-  c.MapType<IFormFile>(() => new OpenApiSchema
+  options.AddPolicy("ReactClient", policy =>
   {
-    Type = "string",
-    Format = "binary"
+    policy.WithOrigins("http://localhost:5173")
+      .AllowAnyHeader()
+      .AllowAnyMethod()
+      .AllowCredentials();
   });
 });
-
+builder.Services.AddSwaggerGen(c =>
+{
+  c.MapType<IFormFile>(() => new OpenApiSchema { Type = "string", Format = "binary" });
+});
 
 
 var app = builder.Build();
+
+
+app.UseCors("ReactClient");
+
+// SignalR endpoint-i
+app.MapHub<ChatHub>("/chatHub");
+
 Common.Initialize(builder.Configuration);
 app.UseApiResponseAndExceptionWrapper(new AutoWrapperOptions()
 {
@@ -81,8 +93,9 @@ app.UseApiResponseAndExceptionWrapper(new AutoWrapperOptions()
   ShouldLogRequestData = false,
   ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
   UseCustomExceptionFormat = false,
-  ExcludePaths = [
-    new AutoWrapperExcludePath("(?i).*download*.", ExcludeMode.Regex), 
+  ExcludePaths =
+  [
+    new AutoWrapperExcludePath("(?i).*download*.", ExcludeMode.Regex),
   ]
 });
 app.UseStaticFiles();

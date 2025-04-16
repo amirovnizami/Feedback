@@ -9,6 +9,17 @@ public static class ServiceConfigs
   public static IServiceCollection AddServiceConfigs(this IServiceCollection services,
     Microsoft.Extensions.Logging.ILogger logger, WebApplicationBuilder builder)
   {
+    builder.Services.AddCors(options =>
+    {
+      options.AddDefaultPolicy(policy =>
+      {
+        policy.WithOrigins("http://localhost:3000") // React üçün
+          .AllowAnyHeader()
+          .AllowAnyMethod()
+          .AllowCredentials();
+      });
+    });
+    builder.Services.AddSignalR();
     builder.Services.AddAuthentication();
     builder.Services.AddAuthorization();
     services.AddInfrastructureServices(builder.Configuration, logger)

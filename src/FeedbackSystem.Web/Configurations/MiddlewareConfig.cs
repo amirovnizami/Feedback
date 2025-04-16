@@ -27,7 +27,7 @@ public static class MiddlewareConfig
      app.UseSwaggerGen();
 
     app.UseMiddleware<UnauthorizedMiddleware>();
-
+    app.MapHub<ChatHub>("/chatHub");
     app.UseAuthentication();
     app.UseAuthorization();
     app.UseHttpsRedirection();
