@@ -1,7 +1,7 @@
 ﻿using FeedbackSystem.UseCases.Feedbacks.Get;
 
 public class GetById(IMediator _mediator)
-  : Endpoint<GetFeedbackByIdRequest, FeedbackRecord>
+  : Endpoint<GetFeedbackByIdRequest, List<FeedbackRecord>>
 {
   public override void Configure()
   {
@@ -23,8 +23,21 @@ public class GetById(IMediator _mediator)
 
     if (result.IsSuccess)
     {
-      Response = new FeedbackRecord(result.Value.loginId, result.Value.firstName, result.Value.lastName,
-        result.Value.email, result.Value.branchId, result.Value.comments);
+      Response = new List<FeedbackRecord>();
+  
+      foreach (var feedback in result.Value)
+      {
+        var record = new FeedbackRecord(
+          feedback.loginId,
+          feedback.firstName,
+          feedback.lastName,
+          feedback.email,
+          feedback.branchId,
+          feedback.comments
+        );
+    
+        Response.Add(record);
+      }
     }
   }
 }

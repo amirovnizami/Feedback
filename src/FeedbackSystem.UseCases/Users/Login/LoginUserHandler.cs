@@ -18,14 +18,14 @@ public class LoginUserHandler(IRepository<User> _repository, ITokenService token
 
     if (user is null)
     {
-      return Result.Error("Invalid email or password");
+      return Result.NotFound("Invalid email or password");
     }
 
     bool isPasswordValid = BCrypt.Net.BCrypt.Verify(request.password, user.PasswordHash);
 
     if (!isPasswordValid)
     {
-      return Result.Error("Invalid email or password");
+      return Result.NotFound("Invalid email or password");
     }
 
     var token = _tokenService.GenerateJWT(user);

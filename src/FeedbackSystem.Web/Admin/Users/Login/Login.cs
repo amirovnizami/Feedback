@@ -24,7 +24,7 @@ public class Login(IMediator _mediator) : Endpoint<LoginRequest, LoginResponse>
       Response = new LoginResponse(result.Value);
       return;
     }
-
+    
     await SendResultAsync(result.ToMinimalApiResult());
   }
 }

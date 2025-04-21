@@ -6,28 +6,36 @@ using FeedbackSystem.UseCases.Comments;
 namespace FeedbackSystem.UseCases.Feedbacks.Get;
 
 public class GetFeedbackHandler(
-  IReadRepository<Feedback> repository, 
-  CommentService commentService) 
-  : IQueryHandler<GetFeedbackQuery, Result<FeedbackDto>>
+  IReadRepository<Feedback> repository,
+  IMapper mapper,
+  CommentService commentService)
+  : IQueryHandler<GetFeedbackQuery, Result<List<FeedbackDto>>>
+
 {
-  public async Task<Result<FeedbackDto>> Handle(GetFeedbackQuery request, CancellationToken cancellationToken)
+  public async Task<Result<List<FeedbackDto>>> Handle(GetFeedbackQuery request, CancellationToken cancellationToken)
   {
     var spec = new FeedbackByIdSpec(request.id);
-    var entity = await repository.FirstOrDefaultAsync(spec, cancellationToken);
 
-    if (entity == null) return Result.NotFound("Feedback not found");
+    var list = await repository.ListAsync(cancellationToken);
+
+
+    if (list == null) return Result.NotFound("Feedback not found");
 
     var commentDtos = new List<CommentDto>();
 
-    foreach (var comment in entity.Comments)
+    foreach (var feedback in list)
     {
-      var dto = await commentService.CreateCommentDtoAsync(comment);
-      commentDtos.Add(dto);
+      foreach (var comment in feedback.Comments)
+      {
+        var dto = await commentService.CreateCommentDtoAsync(comment);
+        commentDtos.Add(dto);
+      }
     }
-
-    return new FeedbackDto(
-      entity.LoginId, entity.FirstName, entity.LastName, 
-      entity.Email, entity.BranchId, commentDtos);
+    var dtos = new List<FeedbackDto>();
+    foreach (var feedback in list)
+    {
+      dtos.Add(mapper.Map<FeedbackDto>(feedback));
+    }
+    return Result.Success(dtos);
   }
 }
-
