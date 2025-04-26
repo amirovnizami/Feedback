@@ -35,6 +35,11 @@ public class AppDbContext : DbContext
       .WithOne(c => c.Feedback)
       .HasForeignKey(c => c.FeedbackId)
       .OnDelete(DeleteBehavior.Cascade);
+    modelBuilder.Entity<Feedback>()
+      .HasOne(f => f.Status)
+      .WithMany(s => s.Feedbacks)
+      .HasForeignKey(f => f.StatusId)
+      .OnDelete(DeleteBehavior.NoAction); 
 
     base.OnModelCreating(modelBuilder);
     modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

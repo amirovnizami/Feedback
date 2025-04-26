@@ -2,7 +2,7 @@
 
 public sealed class FeedbackByIdSpec : Specification<Feedback>
 {
-  public FeedbackByIdSpec(int id)
+  public FeedbackByIdSpec(int? id)
   {
     Query.Include(f => f.Comments);
     Query.Where(f => f.Id == id);

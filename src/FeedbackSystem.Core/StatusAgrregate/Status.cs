@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace FeedbackSystem.Core.StatusAgrregate;
 
 public class Status : EntityBase, IAggregateRoot
@@ -15,4 +10,5 @@ public class Status : EntityBase, IAggregateRoot
     Id = id;
     StatusName = statusName;
   }
+  public ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
 }

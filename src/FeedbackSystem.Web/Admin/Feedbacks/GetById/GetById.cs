@@ -33,6 +33,8 @@ public class GetById(IMediator _mediator)
           feedback.lastName,
           feedback.email,
           feedback.branchId,
+          feedback.statusId,
+          feedback.createdDate,
           feedback.comments
         );
     

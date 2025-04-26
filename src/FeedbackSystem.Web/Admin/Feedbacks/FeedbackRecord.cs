@@ -7,6 +7,8 @@ public record FeedbackRecord(
   string? lastname,
   string? email,
   int? branchId,
+  int?statusId,
+  DateOnly date,
   IEnumerable<CommentDto> Comments)
 {
 }

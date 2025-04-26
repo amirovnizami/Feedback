@@ -14,9 +14,9 @@ public class GetFeedbackHandler(
 {
   public async Task<Result<List<FeedbackDto>>> Handle(GetFeedbackQuery request, CancellationToken cancellationToken)
   {
-    var spec = new FeedbackByIdSpec(request.id);
+    var spec = new FeedbackListSpec();
 
-    var list = await repository.ListAsync(cancellationToken);
+    var list = await repository.ListAsync(spec,cancellationToken);
 
 
     if (list == null) return Result.NotFound("Feedback not found");

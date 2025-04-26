@@ -21,7 +21,7 @@ public class UpdateFeedbackHandler(IRepository<Feedback> _repository,IMapper _ma
     await _repository.UpdateAsync(exisitingFeedback, cancellationToken);
      var commentList = _mapper.Map<IEnumerable<CommentDto>>(exisitingFeedback.Comments);
     return new FeedbackDto(exisitingFeedback.LoginId, exisitingFeedback.FirstName,
-      exisitingFeedback.LastName, exisitingFeedback.Email, exisitingFeedback.BranchId,
+      exisitingFeedback.LastName, exisitingFeedback.Email, exisitingFeedback.BranchId,exisitingFeedback.StatusId,exisitingFeedback.CreatedDate,
       commentList);
   }
 }

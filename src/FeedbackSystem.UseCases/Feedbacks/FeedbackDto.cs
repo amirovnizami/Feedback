@@ -9,6 +9,8 @@ public record FeedbackDto(
   string? lastName,
   string? email,
   int branchId,
+  int ?statusId,
+  DateOnly createdDate,
   IEnumerable<CommentDto> comments)
 {
 }

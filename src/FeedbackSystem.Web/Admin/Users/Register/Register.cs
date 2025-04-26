@@ -8,6 +8,7 @@ public class Register(IMediator _mediator) : Endpoint<RegisterRequest, RegisterR
   public override void Configure()
   {
     Post(RegisterRequest.Route);
+    AllowAnonymous();
     Summary(s =>
     {
       s.ExampleRequest = new RegisterRequest()

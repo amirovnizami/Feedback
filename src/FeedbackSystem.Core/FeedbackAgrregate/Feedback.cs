@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using FeedbackSystem.Core.BranchAggregaet.Specifications;
 using FeedbackSystem.Core.CommentAggregate;
 using FeedbackSystem.Core.StatusAgrregate;
@@ -28,8 +29,10 @@ public class Feedback : EntityBase, IAggregateRoot
   public string? Email { get; set; }
   public int BranchId { get; set; }
 
+  public int? StatusId { get; set; } = 1;
+  public DateOnly CreatedDate { get; set; } = DateOnly.FromDateTime(DateTime.Now);
+  [ForeignKey("StatusId")] public Status Status { get; set; } = null!;
   [JsonIgnore] public ICollection<Comment> Comments { get; set; } = new List<Comment>();
-
   public Branch Branch { get; set; } = null!;
 
 
