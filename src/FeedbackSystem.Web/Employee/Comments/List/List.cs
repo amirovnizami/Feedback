@@ -20,7 +20,7 @@ public class ListComment(IMediator mediator) : Endpoint<CommentListRequest, Comm
     {
       Response = new CommentsListResponse
       {
-        Comments = result.Value.Select(b => new CommentRecord(b.Id, b.Text)).ToList(),
+        Comments = result.Value.Select(b => new CommentRecord(b.Id, b.Text,b.IsAdmin)).ToList(),
         ErrorMessage = null
       };
     }

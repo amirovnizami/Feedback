@@ -1,6 +1,7 @@
 ﻿using FeedbackSystem.UseCases.Categories.Delete;
+using FeedbackSystem.Web.Categories.Delete;
 
-namespace FeedbackSystem.Web.Categories.Delete;
+namespace FeedbackSystem.Web.Admin.Categories.Delete;
 
 public class Delete(IMediator _mediator)
   : Endpoint<DeleteCategoryRequest>

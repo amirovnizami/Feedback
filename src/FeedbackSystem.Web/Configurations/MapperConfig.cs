@@ -35,8 +35,9 @@ public class MapperConfig
         .ForMember(dest => dest.branchId, opt => opt.MapFrom(src => src.BranchId));
       cfg.CreateMap<Comment, CommentDto>()
         .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
-        .ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.Text));
-
+        .ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.Text))
+        .ForMember(dest => dest.IsAdmin, opt => opt.MapFrom(src => src.IsAdmin));
+      
     });
   }
 }

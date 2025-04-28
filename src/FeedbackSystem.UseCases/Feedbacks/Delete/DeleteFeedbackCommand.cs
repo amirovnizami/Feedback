@@ -2,4 +2,4 @@
 
 namespace FeedbackSystem.UseCases.Feedbacks.Delete;
 
-public record DeleteFeedbackCommand(int id) : ICommand<Result>;
+public record DeleteFeedbackCommand(string loginId) : ICommand<Result>;

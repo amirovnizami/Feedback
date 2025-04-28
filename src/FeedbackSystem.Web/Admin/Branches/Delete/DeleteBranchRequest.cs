@@ -1,4 +1,4 @@
-﻿namespace FeedbackSystem.Web.Branches;
+﻿namespace FeedbackSystem.Web.Admin.Branches.Delete;
 
 public record DeleteBranchRequest
 {
