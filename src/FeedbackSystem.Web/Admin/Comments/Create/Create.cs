@@ -12,7 +12,7 @@ public class Create(IMediator mediator,IManageFileService manageFileService) : E
     AllowFileUploads();
     Summary(s =>
     {
-      s.ExampleRequest = new CreateCommentRequest() { feedbackId = 1, Comment = "Message" };
+      s.ExampleRequest = new CreateCommentRequest() { loginId = "XX12345678", Comment = "Message" };
     });
   }
 
@@ -25,7 +25,7 @@ public class Create(IMediator mediator,IManageFileService manageFileService) : E
       
     }
 
-    var result = await mediator.Send(new CreateAdminCommentCommand(request.feedbackId, request.Comment,fileName), ct);
+    var result = await mediator.Send(new CreateAdminCommentCommand(request.loginId, request.Comment,fileName), ct);
     if (result.IsSuccess)
     {
       Response = new CreateCommentResponse(result.Value, request.Comment);
